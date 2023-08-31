@@ -1,0 +1,32 @@
+﻿Homework 
+
+
+1. Протестуй сайт https://www.headhunterhairstyling.com/, знайшовши 3 баги; запиши їх в Google docs. 
+2. Створи єдиний HTML-документ з підключенням в ньому стилів трьома різними способами:
+* В середині специфічного тегу (inline)
+* В розділі “HEAD”
+* У зовнішньому .css файлі
+3. Перевір відображення створеного документа в різних браузерах.
+3.1.  Коротко опиши різницю у відображенні елементів. 
+Я помітила тільки одну різницю в Internet Explorer в емодзі бо усіди він виглядає нормально та однаково а в експлорері він виглядає просто як чорний контур емодзі
+
+
+ Beet Sprout — детальніше заглибся в практику. 
+1. Виконай завдання попереднього рівня. 
+2. За допомогою Developer Tools визнач кодування символів, використаних на таких вебсторінках:
+* https://beetroot.academy
+* https://microseniors76.com/
+* https://www.tennis-warehouse.com/
+* https://www.fidelity.com/
+https://beetroot.academy/
+<meta charset="utf-8">
+(utf-8)
+https://microseniors76.com/
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+(unicode)
+https://www.tennis-warehouse.com/
+<meta name="msapplication-TileColor" content="#FFFFFF">
+(unicode)
+https://www.fidelity.com/
+<meta charset="utf-8">
+(utf-8)
