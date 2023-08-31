@@ -1,0 +1,304 @@
+﻿Beet Seed  — відпрацюй навички на базовому рівні.
+1. Склади порівняльну таблицю трьох видів тестової документації:
+
+
+Назва тестової документації
+	Основні характеристики
+	Переваги
+	Недоліки
+	Чек-ліст
+	Чек ліст це список перевірок які треба провести у процесі перевірки просто кажучи To Do List
+	-швидко
+-не займає багато часу
+-легка заміна тест кейсу якщо немає часу або якщо клієнт не хоче
+	-можно використовувати тільки коли є стабільна група тестировщиков бо якщо нова людина прийде буде важко пояснити що до чого та ввести в курс діла
+	Тест-кейс
+	це документ що описує сукупність усіх кроків, дуже детально усе описує
+	-можно просто скинути тест кейси людині яка прийшла в команду бо там усе поясненно
+-дуже детальні що також може допомогти команді розробки або механічним тестувальникам бо усе зрозуміло, також розробникам це дуже допомогає бо буває що їм так легше знайти в якій частині коду сталася помилка
+	-це доволі довго та дорого бо багато докумнтації 
+-також дуже багато кроків
+	Користувацький сценарій
+	Користувацький сценарій описує послідовність кроків, які користувач виконує, щоб взаємодіяти з продуктом, програмою або системою. 
+	-Користуватський сценарій допомагає тестувальникам моделювати реальні ситуації
+-Сценарії дають чітку мету для тестування
+-Кожен крок у сценарії може або є документований що дозволяє легше виявляти помилки
+	-Користувацьки сценарії створюють на певні випадки тому може статися проблема з неочікуваним випадком
+-це може зайняти багато часу
+-можуть старіти з часом
+-це може бути доволі дороге задоволення
+	
+
+
+
+2. Склади чек-ліст для перевірки головної сторінки свого улюбленого інтернет-магазину (rozetka.ua, hotline.ua, silpo.ua тощо). Темплейт для чек-ліста можна взяти в кроці три теорії.
+
+
+
+
+
+
+
+
+сайт rozetka.ua
+	Євгнія Тисячна 
+Google Chrome Версія 115.0.5790.110
+	реестрація та особ.профіль
+	
+
+	реестрація на сайті
+	passed
+	редагування профілю
+	passed
+	Пошук по сайту та головна сторінка
+	
+
+	Пошук продукту
+	passed
+	Додавання у кошик
+	passed
+	перегляд кошику 
+	passed
+	каталог товарів
+	passed
+	перехід по каталогу
+	passed
+	
+
+
+
+Beet Sprout — детальніше заглибся в практику. 
+1. Виконай завдання попереднього рівня.
+2. Склади 5 позитивних і 5 негативних тест-кейсів для перевірки основної функціональності твого улюбленого інтернет-магазину (rozetka.ua, hotline.ua, silpo.ua тощо)
+Test Scenario Name: Adding products to the basket at rozetka.com
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	write in the search bar “bed”
+	
+
+	the items will be showed
+	2
+	click on the first item that popped up
+	
+
+	
+
+	3
+	click on the basket sign
+	
+
+	
+
+	4
+	click on “continue order”
+	
+
+	
+
+	5
+	fill out your payment details
+	
+
+	Positive: Your payment went through
+Negative: Your payment didnt went trough
+	
+
+Test Scenario Name: Searching Items with filter rozetka.com
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	Write in the search bar “bed”
+	
+
+	
+
+	2
+	click on the search button
+	
+
+	
+
+	3
+	choose in the filter on the left side these parameters: Brand “BNB”, ready to ship, Form “Circle”, size 210x200
+	
+
+	Positive: the product that you yre searching will pop up
+Negative: there is no product that fits this criteria
+	
+
+Test Scenario Name: logging in in rozetka.com
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	write in the login the info below
+	
+
+	
+
+	2
+	write the password that is in the info bellow
+	
+
+	
+
+	3
+	click on the button “log in”
+	
+
+	Positive: You are logged in and need to verify the email address
+Negative: This email is already taken, choose another one
+	
+
+
+
+Test Scenario Name: changing personal information in rozetka.com
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	click on the menu sign on the top left
+	
+
+	
+
+	2
+	click into your account
+	
+
+	
+
+	3
+	click on “personal information”
+	
+
+	
+
+	4
+	click on “edit”
+	
+
+	
+
+	5
+	change your name i
+	
+
+	Positive: the site will let you change your name 
+Negative: There happen an error please try again
+	
+
+Test Scenario Name: searching up the product with a keyword rozetka.com
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	write up in the search bar a category “clothing”
+	
+
+	
+
+	2
+	press the search button
+	
+
+	Positive: the site will show you different products that fit into this category
+Negative: there is no products with this keyword, please search it with a different keyword 
+	
+
+
+
+Mighty Beet — різнобічно опануй тематику уроку.
+1. Виконай завдання двох попередніх рівнів.
+2. Ти – засновник/ця стартапу, який планує випустити на ринок мобільний застосунок для обміну світлинами котиків для iOS та Android пристроїв. Стартап має команду з 3 розробників (back-end, iOS та Android). Вимоги та сценарії використання надаєш ти як головний стейкхолдер.
+Завдання: Створи тест-план, який дозволить випустити продукт належної якості.
+Table of Contents
+1. Introduction
+2. Roles and Responsobilities
+3. Quality objectives
+
+
+
+
+Introduction
+Project “Girl´s dinner”
+With this project our customer wants to create a perfect app for a fastfood market, in the concept of girl´s dinner they want to give person the chance to choose a girl´s dinner that is now trending on TikTok
+
+
+Roles and Responsobilities
+
+
+Role
+	Staff Member
+	Responsibilities
+	Project
+Manager
+
+
+	
+
+	1.Responsible for Project schedule and the overall
+success of the project.
+
+
+	QA Lead
+	
+
+	1.Participation in the project plan creation/update process.
+2.Planning and organization of test process for the release.
+3.Coordinate with QA analysts/engineers on any
+issues/problems encountered during testing.
+4.Report progress on work assignments to the PM
+
+
+	QA
+	
+
+	1. Understand requirements
+2. Writing and executing Test cases
+3. Preparing RTM
+4. Reviewing Test cases, RTM
+5. Defect reporting and tracking
+6. Retesting and regression testing
+7. Bug Review meeting
+8. Preparation of Test Data
+9. Coordinate with QA Lead for any issues or problems
+encountered during test preparation/execution/defect
+handling.
+
+
+	
+
+
+
+Quality objectives
+A primary objective of testing is to: assure that the system meets the full requirements, including quality requirements (functional and non-functional requirements) and fit metrics for each quality requirement and satisfies the use case scenarios and maintain the quality of the product. Any changes, additions, or deletions to the requirements document, Functional Specification, or Design Specification will be documented and tested at the highest level of quality allowed within the remaining time of the project and within the ability of the test team.
