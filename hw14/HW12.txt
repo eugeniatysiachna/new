@@ -1,0 +1,88 @@
+﻿Beet Seed  — відпрацюй навички на базовому рівні.
+1. Створи високорівневий тест-кейс для перевірки функціоналу мобільного застосунка (наприклад, Дія або МоноБанк).
+Поповнення своєї картки в монобанк через мобільний застосунок 
+2. Створи 3 низькорівневі тест-кейси на основі високорівневого.
+Test Scenario Name: Recharge your MonoBank Card from your other card
+Prerequisites: You should have an account on MonoBank App unf have a second card
+No
+	Steps
+	Expected Result 
+	1
+	in the main menu click on “recharge my card”
+	
+
+	2
+	choose your other card as a way to recharge your card
+	
+
+	3
+	choose with which sum you want to recharge your card, you should have this sum on your other card 
+	
+
+	4
+	click “send”
+	there should be a window “payment sent”
+	Test Scenario Name: Recharge your MonoBank Card with SWIFT
+Prerequisites: You should have an account on MonoBank App unf have a second card
+No
+	Steps
+	Expected Result 
+	1
+	in the main menu click on “recharge my card”
+	
+
+	2
+	choose SWIFT as a way to recharge your card
+	you will see the list with all the currencies
+	3
+	choose Zloty as a currency for your transfer
+	
+
+	4
+	choose that you want to receive your bank requisites on email
+	
+
+	
+
+	enter your e-mail
+	
+
+	
+
+	click “send”
+	requisites have been sent
+	Test Scenario Name: Recharge your MonoBank Card via link
+Prerequisites: You should have an account on MonoBank App 
+No
+	Steps
+	Expected Result 
+	1
+	in the main menu click on “recharge my card”
+	
+
+	2
+	choose “link” as a way to recharge your card
+	there should be a window with the link to recharge your card and also a QR-code
+	3
+	copy the link for recharging your card
+	
+
+	
+
+Beet Sprout— детальніше заглибся в практику. 
+1. Виконай завдання попереднього рівня.
+2. Проестимуй, скільки часу знадобиться для виконання тест-кейсів з попереднього завдання. 
+на мою думку для виконання тих тест кейсів знадобится а саме тестування хвилин 30, на написання тест кейсів та баг репортів три години, і на перевірку також тобто я б сказала що потрібен день на це 
+3. Для оцінки використай як мінімум 2 техніки (наприклад, WBS та трьохточкову естимацію).
+-трьохточкова естимація: E= (a + m + b) / 3 = 10
+a=8
+m=10
+b=12
+
+
+-T-Shirt sizes: на мою думку ці задачі усі разом на розмір м
+
+
+Mighty Beet — різнобічно опануй тематику уроку.
+1. Виконай завдання двох попередніх рівнів.
+2. Продовжуємо розвивати стартап для застосунка, який дозволяє обмінюватися фотографіями котиків. Команда тестувальників стартапу зростає разом із продуктом. Ви замислилися над створенням тестової стратегії.
