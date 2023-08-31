@@ -1,0 +1,257 @@
+﻿Beet Seed  — відпрацюй навички на базовому рівні.
+1. Склади порівняльну таблицю функціонального, нефункціонального і пов’язаного зі змінами видів тестування. 
+Порівняння має містити такі блоки:
+* що перевіряється;
+* коли застосовується;
+* обмеження;
+* особливості
+
+
+
+
+	 функціональна
+	нефункціональна
+	пов. зі змінами
+	що перевіряється
+	-функціональна перевірка інтерфейсу
+-перевірка безпеки системи
+-перевіряє чи здатні додатки взаємодіяти між собою
+	-тестує програму на навантаження та чи здатна ця програма витримати велику кількість людей
+-перевіряє чи здатна програма діяти в стані стресу
+-тестування стабільності додатку
+-тестування зручності та вставленості додатку
+-
+	-тестування що підтверджує що програма запускаєтся та виконує основні функції
+-перевіряє чи працюють всі старі функції після зміни у програмі чи виправлення помилки
+-чи працює програма згідно із зазначеними вимогами
+	коли застосовується
+	у вимогах та бізнес-процесах
+	коли треба перевірити наскільки довго виконуються деякі завдання на сайті, коли треба перевірити скільки людей може бути в один час на сайті
+	після виправлення багу
+	обмеження
+	тестується вручну та починаємо тестування з виставлення пріоритетів
+	тестується здебільшого за допомогою автоматизованого тестування або за допомогою 
+	тестуються здебільшого саме ті аспекти які були виправленні
+	особливості
+	можливість упустити логічні помилки у пз, але воно імтує фактичне використання системи
+	це тестування того “як” працює система
+	проводится після виправлення багу щоб перевірити чи працюють всі інші функції, 
+	
+
+2. Поясни, в чому різниця між регресією та ретестингом (5 речень).
+Різниця між регресією та ретистингом дуже проста, задача ретистингу полягає тільки в тому щоб протестувати тільки ті дефекти що були виправленні, а регресія це тестування повінстю всього сайту або продукту щоб перевірити не тільки чи працюють ті дефекти які були виправленні а і чи працюють ті плюшки які були до того щоб підтвердити що воно усе повністю працює так само як і до того.
+
+
+Beet Sprout — детальніше заглибся в практику. 
+2. Як ти вважаєш, чи можливе для продукту проведення тільки функціонального тестування, без перевірки нефункціональних вимог?
+* Якщо так – в яких випадках? 
+* Якщо ні – чому? 
+* Обґрунтуй свою відповідь.
+На мою думку я вважаю що це може бути можливим, але чи зробить це продукт якісним це вже інше питання. Бо там наприклад може бути перевірка безпеки продукту та на взаємодії з одним чи більше компонентами але без перевірки того чи може користувач зайти на сайт 24/7 та чи може наприклад одразу 5 людей бути на сайті продукт не буде якісним, тому на мою думку все ж таки ні бо ці два види тестування є дуже важливими як для роботи сайта так і для його функціонала.
+3. Як ти розумієш необхідність проведення smoke (димового) тестування? Чи завжди воно є доречним?
+Я так зрозуміла що димове тестування виконується при маленьких змінах коли не треба проводити ретельний тест усього, а просто перевірити чи працюють основні функції сайту і все і тому я також думаю що цей вид тестування не є завжди доречним бо бувають такі зміни які треба дуже ретельно протестувати, а таке швидке тестування не може перевірити увесь обсяг змін і тд.
+
+
+
+
+
+
+
+
+
+
+
+
+Mighty Beet — різнобічно опануй тематику уроку.
+2. Ти – засновник/ця стартапу і плануєш випустити на ринок мобільний застосунок для обміну світлинами котиків для iOS та Android пристроїв.
+Користувачі можуть завантажувати фотографії котиків. Але не можуть завантажувати фотографії інших тварин/людей/об’єктів. Користувачі можуть додавати друзів, ставити “вподобайки”, залишати коментарі.
+
+Завдння: Напиши 5 функціональних тест-кейсів, які перевіряли б роботу застосунку.
+1.Test Scenario Name: posting pictures of a cat on “MyCat App”
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+
+
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	Go to home page
+	
+
+	You should see a home page and a button with a cat in the left up corner
+	2
+	click on the button with a cat in the left up corner
+	
+
+	you should see a pictures with a cat from your gallery
+	3
+	choose a picture of your cat
+	
+
+	you should see that the picture that you chose is green now
+	4
+	click on the button in right up corner “upload”
+	
+
+	you should get a notification that your picture is posted
+negative: there is an error in uploading your picture please check your internet connection or try again
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.Test Scenario Name: posting pictures ONLY of a cat on “MyCat App”
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	Go to home page
+	
+
+	
+
+	
+
+	click on the button with a cat in the left up corner
+	
+
+	
+
+	
+
+	choose a picture of your cat, 
+	
+
+	you should only see pictures with the cat
+
+
+	
+
+	click on the button in right up corner “upload”
+	
+
+	you should get a notification that your picture is posted
+negative: there is an error in uploading your picture please check your internet connection or try again
+	
+
+3.Test Scenario Name: adding friends on “MyCat App”
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+Step
+	Step Details
+	Test Data
+	Expected Result
+	1
+	go to home page
+	
+
+	
+
+	
+
+	click on the search bar
+	
+
+	
+
+	
+
+	enter a name of a user
+	
+
+	you should see his/her/their profile
+	
+
+	click on “add a friend”
+	
+
+	the button should go gray after you press the button
+negative: there is an error please try again or check your internet connection
+	
+
+
+
+
+
+
+
+
+
+4.Test Scenario Name: liking pictures on “MyCat App”
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+Step
+	Step Details
+	Test Data
+	Expected Result
+	
+
+	go to the home page
+	
+
+	you should see other posts from people you follow
+	
+
+	click on the cat in the heart button
+	
+
+	the button should turn red and the phone should make a sound of “myauuuu”
+negative: here is an error please try again or check your internet connection
+	
+
+5.Test Scenario Name: commenting on “MyCat App”
+Prerequisites: login: test-case@beetroot.com  password: 123456beetroot
+Step
+	Step Details
+	Test Data
+	Expected Result
+	
+
+	go to home page
+	
+
+	you should see posts from people you follow
+	
+
+	click on the button under the post “comment a cat!”
+	
+
+	the window should pop up where you can write a comment
+	
+
+	
+
+write the comment
+	
+
+	
+
+	
+
+	
+
+	and click “send”
+	
+
+	you should get a notification that your comment has been sent
+negative: here is an error please try again or check your internet connection
+	
+
+
+
+3. Напиши, які нефункціональні вимоги ти хотів/ла б  застосувати для продукту твого стартапу. 
+Опиши перевірки, які б їх перевіряли (3-5 прикладів).
+	1.Я б хотіла щоб мій продукт витримував 50,000 користувачів водночас
+Для перевірки цього: потрібне автоматизоване тестування що імітує роботу 50,000 користувачів
+2.Я б хотіла щоб програма була зручна для використання
+Для цього треба тестування зручності
